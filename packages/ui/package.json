@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "lint": "TIMING=1 eslint \"**/*.{ts,tsx,js,jsx}\" --fix",
-    "clean": "rm -rf .turbo"
+    "clean": "del -rf .turbo"
   },
   "sideEffects": false,
   "type": "module",
