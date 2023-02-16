@@ -2,6 +2,10 @@ import { useState, useEffect } from 'react';
 import { Layout, Page, Text, List, Code } from '@vercel/examples-ui';
 import { Button } from '@acme/ui';
 import { matchingTextColor, randomColor } from '@acme/utils';
+//@ts-ignore
+import DevComponent from '@dev/ui-test';
+//@ts-ignore
+import NextUtil from 'next-util';
 
 export default function Index() {
   const [bgColor, setBgColor] = useState('');
@@ -51,6 +55,9 @@ export default function Index() {
           </Button>
         </>
       )}
+
+      <DevComponent />
+      <NextUtil />
     </Page>
   );
 }
